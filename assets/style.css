@@ -1,10 +1,11 @@
 hr {
     margin: 6%;
+    height: 2px;
 }
 
 .main-wrapper {
     
-    background-image: url("./images/design-development-electronics-326424.jpg");
+    background-image: url("./images/background-blur-category-545331.jpg");
     width: 100%;
     height: 500px;
 }
@@ -12,8 +13,8 @@ hr {
 .name {
     margin: 10% 40%;
     text-align: center;
-    height: 250px;
-    width: 250px;
+    height: 270px;
+    width: 270px;
     background-color: #070707;
     border-radius: 50%;
     display: inline-block;
@@ -21,7 +22,8 @@ hr {
 
 .head {
     color: white;
-    margin: 15% 10%;
+    margin: 15% 10% 6% 10%;;
+    padding: 3%;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 170%;
@@ -29,4 +31,6 @@ hr {
 }
 .subHead {
     color: white;
+    font-style: italic;
+    font-size: 120%;
 }
