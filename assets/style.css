@@ -1,13 +1,44 @@
+
+
 hr {
     margin: 6%;
     height: 2px;
 }
 
 .main-wrapper {
-    
-    background-image: url("./images/background-blur-category-545331.jpg");
+    z-index: 0;
     width: 100%;
     height: 500px;
+}
+#headline{
+    
+    text-align: center;
+    font-family: 'Beth Ellen', cursive;
+    font-size: 290%;
+    font-weight: bold;
+    margin:5%;
+}
+.link{
+   
+    width: 100%;
+    height: 100%;
+}
+#back-image {
+    background-image: url("./images/background-blur-category-545331.jpg");
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+#image1{
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#image1:hover{
+    opacity: 0.7;
 }
 
 .name {
@@ -18,6 +49,7 @@ hr {
     background-color: #070707;
     border-radius: 50%;
     display: inline-block;
+    color: white;
 }
 
 .head {
@@ -34,3 +66,72 @@ hr {
     font-style: italic;
     font-size: 120%;
 }
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modalContent{
+    margin: auto;
+    display: block;
+    width: 50%;
+    height: 70%;
+    max-width: 700px;
+
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+
+  .modal-content, #caption { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
