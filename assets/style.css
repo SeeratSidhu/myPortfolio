@@ -46,10 +46,13 @@ a{
 
 .og-grid{
     display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .image1{
-    border-radius: 20px;
+    border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
     width: 100%;
